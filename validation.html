@@ -1,0 +1,257 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="validation.css">
+
+</head>
+
+<body>
+
+
+    <div class="div3">
+
+        <b> Sign up form </b><br><br>
+        <form>
+            <input type="text" placeholder="First name" class="box" name="user" id="fuser"><br>
+            <span id="fusername" class="spn"> </span>
+            <br>
+            <br>
+            <input type="text" placeholder="Last name" class="box" name="luser" id="luser"><br>
+            <span id="lusername" class="spn"> </span>
+            <br>
+            <br>
+
+
+            <input type="password" placeholder="Password" class="box" id="pass"><br>
+            <span id="password" class="spn"> </span>
+
+            <br>
+            <br>
+
+            <input type="password" placeholder="Confirm Password" class="box" id="conformpass"><br>
+            <span id="conformpassword" class="spn"> </span>
+
+            <br>
+            <br>
+
+            <input type="text" placeholder="Please enter a phone number" class="box" id="num"><br>
+            <span id="phonenum" class="spn"> </span>
+
+
+            <br>
+            <br>
+
+
+            <input type="text" placeholder="Please enter email address" class="box" id="emal" value=""><br>
+            <span id="emailaddress" class="spn"> </span>
+
+            <br>
+            <br>
+            <br>
+
+            <input type="checkbox" class="check" id="agree">
+            <label class="label3"> I agree to</label>
+            <label class="lable4"> Terms</label>
+            <label class="label3">and</label>
+            <label class="lable4">Privacy Policy </label>
+
+            <br>
+            <br>
+
+            <button type="button" onclick="validate()" class="buton">Login</button>
+
+
+
+
+
+        </form>
+    </div>
+    <div class="div4">
+        <br>
+        <b> User   Database </b><br><br>
+        <br>
+
+
+        <label id="namef" class="labelf"></label>
+        <u id="nameA" class="labell"> </u>
+        <br>
+        <br>
+        <label id="namel" class="labelf"></label>
+        <u id="nameB" class="labell"> </u>
+
+        <br>
+        <br>
+        <label id="pass1" class="labelf"></label>
+        <u id="pass2" class="labell"> </u>
+
+
+        <br>
+        <br>
+        <label id="ph1" class="labelf"></label>
+        <u id="ph2" class="labell"> </u>
+
+
+
+        </table>
+
+
+    </div>
+
+
+
+
+    <script>
+        function validate() {
+
+            var fuser = document.getElementById("fuser").value;
+
+            if (fuser == "") {
+                document.getElementById("fusername").innerHTML = "! **Please enter first name";
+                return false;
+            }
+            if ((fuser.length <= 2) || (fuser.length > 20)) {
+                document.getElementById("fusername").innerHTML = "! **Please enter first name between 3 to 20";
+                return false;
+
+            }
+            if (!fuser.match(/^[a-zA-Z]+$/)) {
+                document.getElementById("fusername").innerHTML = "Only alphabets are allowed";
+                return false;
+                var luser = document.getElementById("luser").value;
+            }
+
+            var luser = document.getElementById("luser").value;
+            if (luser == "") {
+                document.getElementById("lusername").innerHTML = "! **Plaese enter last name";
+                return false;
+            }
+            if ((luser.length <= 2) || (luser.length > 20)) {
+                document.getElementById("lusername").innerHTML = "! **Please enter last name b/w 3 to 20 ";
+                return false;
+
+            }
+            if (!luser.match(/^[a-zA-Z]+$/)) {
+                document.getElementById("lusername").innerHTML = "! **Only alphabets are allowed";
+                return false;
+            }
+
+
+
+
+
+
+            var pass = document.getElementById("pass").value;
+            if (pass == "") {
+                document.getElementById("password").innerHTML = "! **Please enter passsword";
+                return false;
+            }
+
+            if ((pass.length <= 5) || (pass.length > 20)) {
+                document.getElementById("password").innerHTML = "! **Please enterpassword b/w 6 to 20";
+                return false;
+
+            }
+
+
+
+
+            var conformpass = document.getElementById("conformpass").value;
+            if (conformpass == "") {
+                document.getElementById("conformpassword").innerHTML = "! **Please enter passsword";
+                return false;
+            }
+
+            if ((conformpass.length <= 5) || (conformpass.length > 20)) {
+                document.getElementById("conformpassword").innerHTML = "! **Please enterpassword between 6 to 20";
+                return false;
+
+            }
+
+
+            if (pass != conformpass) {
+                document.getElementById("conformpassword").innerHTML = "! **Please enter same pass";
+                return false;
+            }
+
+
+
+            var num = document.getElementById("num").value;
+
+
+            if (isNaN(num)) {
+                document.getElementById("phonenum").innerHTML = "! **plaese enter number";
+                return false;
+            }
+
+            if (num.length != 11) {
+                document.getElementById("phonenum").innerHTML = "! **Please enter 11 digit number";
+                return false;
+
+            }
+
+
+
+            if (num == "") {
+                document.getElementById("phonenum").innerHTML = "! **Please enter phone number";
+                return false;
+            }
+
+
+
+
+
+
+            var email = document.getElementById("emal").value;
+            var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+
+            if (email == "") {
+                document.getElementById("emailaddress").innerHTML = "! **Please enter email address";
+                return false;
+            }
+            if (filter.test(email) == false) {
+                document.getElementById("emailaddress").innerHTML = "! **Please enter valid email address";
+                email.focus;
+                return false;
+            }
+
+            if (document.getElementById('agree').checked == false) {
+
+                alert("You must agreed to all terms and policy");
+
+
+
+
+
+            } else
+                document.getElementById('namef').innerHTML = "First_Name:"
+            document.getElementById('nameA').innerHTML = fuser;
+            document.getElementById('namel').innerHTML = "Last_Name:"
+            document.getElementById('nameB').innerHTML = luser;
+            document.getElementById('pass1').innerHTML = "Password:"
+            document.getElementById('pass2').innerHTML = pass;
+            document.getElementById('ph1').innerHTML = "Phone_Number:"
+            document.getElementById('ph2').innerHTML = num;
+            document.getElementById('ph1').innerHTML = "Email_Address:"
+            document.getElementById('ph2').innerHTML = email;
+
+
+
+
+
+
+
+
+
+
+        }
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
