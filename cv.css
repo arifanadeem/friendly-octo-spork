@@ -1,0 +1,240 @@
+.divmain {
+    height: 800px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+html body {
+    background-color: rgb(90, 90, 231);
+}
+
+body table {
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 6px;
+    *border-collapse: expression('separate', cellSpacing='10px');
+    width: 500px;
+    height: 30px;
+}
+
+table .fa-envelope-o {
+    color: white;
+    font-size: 25px;
+}
+
+table .fa-phone {
+    background-color: #F51970;
+    font-size: 25px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+table .fa-map-marker {
+    font-size: 25px;
+}
+
+.piccell {
+    width: 180px;
+    background-color: #98D700;
+    padding-left: 5px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 13px;
+}
+
+.pic {
+    width: 140px;
+    height: 130px;
+    text-align: center;
+    padding-left: 15px;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
+}
+
+.namecell {
+    width: 320px;
+    height: 50px;
+    background-color: #FFFFFF;
+    color: #00375E;
+    text-align: center;
+    font-size: 17px;
+}
+
+img {
+    width: 110px;
+    height: 130px;
+}
+
+.mailcell {
+    height: 80px;
+    width: 80px;
+    background-color: #FFB001;
+    text-align: center;
+    font-size: 9px;
+}
+
+.phonecell {
+    height: 80px;
+    width: 80px;
+    background-color: #F51970;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+}
+
+.addresscell {
+    height: 80px;
+    width: 80px;
+    background-color: #FDE200;
+    text-align: center;
+    font-size: 10px;
+}
+
+.cardleft {
+    width: 235px;
+    height: 150px;
+    padding: 0px;
+    float: left;
+    margin-left: 4px;
+    margin-right: 0px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.cardright {
+    width: 235px;
+    height: 150px;
+    float: right;
+    padding: 0px;
+    margin-right: 4px;
+    margin-left: 0px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+#headerobj {
+    width: 231px;
+    height: 30px;
+    background-color: #14D9C5;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    padding-right: 0px;
+}
+
+#headeredu {
+    width: 231px;
+    height: 30px;
+    background-color: #A8ED20;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    padding-right: 0px;
+}
+
+#headerexp {
+    width: 231px;
+    height: 30px;
+    background-color: #FFB001;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    padding-right: 0px;
+    padding-top: 4px;
+}
+
+#headerskill {
+    width: 231px;
+    height: 30px;
+    background-color: #024771;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    padding-right: 0px;
+}
+
+#headersport {
+    width: 231px;
+    height: 30px;
+    background-color: #F31A71;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    padding-right: 0px;
+}
+
+#headerint {
+    width: 231px;
+    height: 30px;
+    background-color: #FFE002;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    padding-right: 0px;
+}
+
+.text {
+    color: black;
+    line-height: 2px;
+}
+
+p {
+    margin: 0;
+    padding: 4px;
+    font-size: 10px;
+    line-height: 15px;
+}
+
+.circleobj {
+    width: 33px;
+    height: 33px;
+    border-radius: 100%;
+    margin-left: 20px;
+    background-color: white;
+    margin-top: -22px;
+    margin-right: 10px;
+}
+
+.fa-check {
+    width: 20px;
+    height: 20px;
+    margin-top: 8px;
+    color: #D02365;
+}
+
+.fa-graduation-cap {
+    color: blue;
+    width: 20px;
+    height: 20px;
+    margin-top: 8px;
+}
+
+.fa-briefcase {
+    color: #6BD2F5;
+    width: 20px;
+    height: 20px;
+    margin-top: 8px;
+}
+
+.fa-star {
+    color: #024771;
+    width: 20px;
+    height: 20px;
+    margin-top: 8px;
+}
+
+.fa-futbol-o {
+    width: 20px;
+    height: 20px;
+    color: #14D9C5;
+    margin-top: 8px;
+}
+
+.fa-smile-o {
+    width: 20px;
+    height: 20px;
+    color: #6BD2F5;
+    margin-top: 8px;
+}
